@@ -1,0 +1,25 @@
+{
+  "name": "axo-nextcli",
+  "version": "1.0.0",
+  "description": "NextJS - CLI",
+  "main": "index.js",
+  "bin": {
+    "nextcli": "bin/nextcli"
+  },
+  "keywords": [
+    "next",
+    "nextcli",
+    "nextjs",
+    "next-cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "yargs": "^17.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Axonix-ID/axo-nextcli.git"
+  }
+}
