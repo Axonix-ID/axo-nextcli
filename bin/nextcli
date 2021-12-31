@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+const { exec } = require('child_process');
+const yargs = require('yargs');
+
+yargs.command("new", "Create new nextjs application", {
+    name: {
+        describe: "Application name",
+        demandOption: true,
+        type: "string",
+    }
+}, (argv) => {
+    console.clear();
+    console.log("Creating new nextjs application...\n");
+    console.log('Wait...');
+    exec("npx create-next-app " + argv.name, (err, stdout, stderr) => {
+        // console.log(std);
+        console.log(stdout);
+        console.log(stderr);
+        console.log(err);
+    });
+});
+
+yargs.parse();
